@@ -1,4 +1,11 @@
 {
+    "name": "hangman",
+    "license": "MIT",
+    "type": "project",
+    "description": "Hangman - The Game!",
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
     "require": {
         "symfony/class-loader": "^2.8",
         "raveren/kint": "^1.0"
