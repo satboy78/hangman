@@ -1,2 +1,5 @@
 # Managed by Composer
 /vendor/
+
+# Phpstorm files
+/.idea/
