@@ -1,5 +1,6 @@
 {
     "require": {
-        "symfony/class-loader": "^2.8"
+        "symfony/class-loader": "^2.8",
+        "raveren/kint": "^1.0"
     }
 }
