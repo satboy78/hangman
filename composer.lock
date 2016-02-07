@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ddaeaaa6d36992eacbe5319a576f274a",
-    "content-hash": "99b02fca0fa9d006232cc25b66949c2f",
+    "hash": "65c1965dea94d5329a478c0b8042faa1",
+    "content-hash": "64a2e9712b8aee51f136b9384603f10f",
     "packages": [
         {
             "name": "raveren/kint",
