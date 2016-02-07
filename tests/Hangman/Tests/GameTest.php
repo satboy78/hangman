@@ -15,12 +15,12 @@ class GameTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($game->tryLetter('x'));
     }
 
-    public function testTryUnauthorizedLetter()
+    public function testTryUnauthorizedChar()
     {
         $game = new Game(new Word('filament'), 0, 5);
 
         $this->setExpectedException('\InvalidArgumentException');
-        $this->assertFalse($game->tryLetter('3'));
+        $this->assertFalse($game->tryLetter('@'));
     }
 
     public function testTryRightWord()

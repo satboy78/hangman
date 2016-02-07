@@ -35,11 +35,11 @@ class WordTest extends \PHPUnit_Framework_TestCase
         $word->tryLetter('a');
     }
 
-    public function testTryLetterWithUnauthorizedLetter()
+    public function testTryLetterWithUnauthorizedChar()
     {
         $this->setExpectedException('\InvalidArgumentException');
         $word = new Word('order');
-        $word->tryLetter('7');
+        $word->tryLetter('@');
     }
 
     public function testTryLetter()
