@@ -78,14 +78,14 @@ class Word
      */
     public function tryLetter($letter)
     {
-        if (true !== ctype_alpha($letter)) {
-            throw new \InvalidArgumentException(sprintf('The char "%s" is not a valid letter.', $letter));
-        }
-
         $letter = strtolower($letter);
 
+        if (0 === preg_match('/^[a-z0-9]$/', $letter)) {
+            throw new \InvalidArgumentException(sprintf('The char "%s" is not a valid letter or number.', $letter));
+        }
+
         if (in_array($letter, $this->triedLetters, true)) {
-            throw new \InvalidArgumentException(sprintf('The letter "%s" has already been tried.', $letter));
+            throw new \InvalidArgumentException(sprintf('The char "%s" has already been tried.', $letter));
         }
 
         $this->triedLetters[] = $letter;
