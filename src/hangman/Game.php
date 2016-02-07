@@ -1,8 +1,8 @@
 <?php
 
-namespace Hangman;
+namespace hangman;
 
-class Game 
+class Game
 {
     private $maxAttempts;
     private $word;
