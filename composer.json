@@ -4,7 +4,7 @@
     "type": "project",
     "description": "Hangman - The Game!",
     "autoload": {
-        "psr-4": { "Hangman\\": "src/hangman" }
+        "psr-4": { "Hangman\\": "src/Hangman" }
     },
     "require": {
         "symfony/class-loader": "^2.8"
