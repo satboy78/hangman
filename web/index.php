@@ -93,7 +93,7 @@ $context->save($game);
                     </p>
                 <?php endif ?>
 
-                <h2>Choose a letter:</h2>
+                <h2>Choose a letter / number:</h2>
 
                     <p>
                     <?php foreach ($charsMap as $letter) : ?>
