@@ -11,6 +11,11 @@
 
     },
     "require-dev": {
-        "raveren/kint": "^1.0"
+        "raveren/kint": "^1.0",
+        "phpunit/phpunit": "~3.7.0",
+        "mockery/mockery": "~0.8.0"
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }
