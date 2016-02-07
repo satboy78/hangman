@@ -1,6 +1,6 @@
 <?php
 
-namespace Hangman;
+namespace hangman;
 
 use Hangman\Storage\StorageInterface;
 
@@ -36,7 +36,7 @@ class GameContext
      */
     public function newGame(Word $word, $maxAttempts)
     {
-        return new Game($word, 0,$maxAttempts);
+        return new Game($word, 0, $maxAttempts);
     }
 
     /**
