@@ -44,8 +44,7 @@ if (!empty($_GET['letter'])) {
     } catch (Exception $e) {
         $msg = $e->getMessage();
     }
-
-} else if (!empty($_POST['word'])) {
+} elseif (!empty($_POST['word'])) {
     $game->tryWord($_POST['word']);
 }
 
