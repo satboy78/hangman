@@ -1,6 +1,6 @@
 <?php
 
-namespace hangman;
+namespace Hangman;
 
 class Word
 {
