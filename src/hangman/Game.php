@@ -79,11 +79,19 @@ class Game
     }
 
     /**
-     * @return int
-     */
+ * @return int
+ */
     public function getAttempts()
     {
         return $this->attempts;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMaxAttempts()
+    {
+        return $this->maxAttempts;
     }
 
     /**
