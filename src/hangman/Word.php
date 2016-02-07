@@ -1,8 +1,8 @@
 <?php
 
-namespace Hangman;
+namespace hangman;
 
-class Word 
+class Word
 {
     private $word;
     private $foundLetters;
