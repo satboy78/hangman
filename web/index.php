@@ -39,7 +39,12 @@ if (!$game = $context->loadGame($maxAttempts)) {
 
 // Checks if the letter / word chosen by the user is valid
 if (!empty($_GET['letter'])) {
-    $game->tryLetter($_GET['letter']);
+    try {
+        $game->tryLetter($_GET['letter']);
+    } catch (Exception $e) {
+        $msg = $e->getMessage();
+    }
+
 } else if (!empty($_POST['word'])) {
     $game->tryWord($_POST['word']);
 }
@@ -71,6 +76,9 @@ $context->save($game);
             <div class="starter-template">
                 <h1>Hangman - The Game!</h1>
 
+                <?php if ($msg !== null) : ?>
+                    <p><?php echo $msg; ?></p>
+                <?php endif ?>
                 <?php if ($game->isHanged()) : ?>
                     <p>Sorry, you're hanged! The word to guess was <strong><?php echo $game->getWord() ?></strong>. Play a <a href="index.php?new=true">new game.</a></p>
                 <?php elseif ($game->isWon()) : ?>
