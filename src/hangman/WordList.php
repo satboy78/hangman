@@ -1,6 +1,6 @@
 <?php
 
-namespace Hangman;
+namespace hangman;
 
 use Hangman\Loader\GameLoaderInterface;
 
@@ -9,12 +9,11 @@ class WordList
     private $words;
 
     /**
-     *
+     * Constructor
      */
     public function __construct()
     {
         $this->words = array();
-
     }
 
     /**
@@ -52,7 +51,8 @@ class WordList
      *
      * @return int
      */
-    private function getRandomLength() {
+    private function getRandomLength()
+    {
         return array_rand($this->words);
     }
 
